@@ -354,24 +354,24 @@ section h2 {
     gap: 20px;
 }
 
-.tech-category {
+#techstack .tech-category {
     background: #fff;
     border: 1px solid #ddd;
     padding: 25px;
 }
 
-.tech-category h3 {
+#techstack .tech-category h3 {
     font-size: 17px;
     margin-bottom: 20px;
 }
 
-.tech-category ul {
+#techstack .tech-category ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.tech-category li {
+#techstack .tech-category li {
     padding: 7px 0;
     color: #555;
     border-bottom: 1px solid #eee;
@@ -379,6 +379,15 @@ section h2 {
 
 .tech-category li:last-child {
     border-bottom: none;
+}
+
+.tech-icon {
+    width: 24px;
+    margin-right: 10px;
+    color: #222;
+    font-size: 19px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 /* =========================
@@ -560,6 +569,63 @@ section h2 {
     .education-header {
         flex-direction: column;
     }
+}
+
+/* Tech cards */
+#techstack .tech-category {
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.05);
+}
+
+#techstack .tech-category h3 {
+    margin-bottom: 14px;
+    font-size: 17px;
+}
+
+#techstack .tech-category ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(74px, 1fr));
+    gap: 8px;
+}
+
+#techstack .tech-category li {
+    display: flex;
+    min-height: 66px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 8px 5px;
+    border: 1px solid #edf0f4;
+    border-radius: 12px;
+    background: #fafbfc;
+    color: #374151;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+#techstack .tech-category li:hover {
+    transform: translateY(-4px);
+    border-color: #cbd5e1;
+    box-shadow: 0 8px 16px rgba(15, 23, 42, 0.1);
+}
+
+#techstack .tech-category .tech-icon {
+    width: auto;
+    margin: 0;
+    font-size: 23px;
+    line-height: 1;
+}
+
+#techstack .tech-category .tech-logo {
+    width: 23px;
+    height: 23px;
+    object-fit: contain;
 }
     width: 320px;
     height: 320px;
